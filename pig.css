@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-game-wrapper {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #ad2fe7; */
+  background-image: linear-gradient(to left top, #e336fa, #d11b48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-box-wrapper {
+  width: 860px;
+  height: 500px;
+  background-color: #e7e5e58f;
+  display: flex;
+  position: relative;
+}
+.players {
+  flex: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  color: #4d4b4b;
+}
+.players h1 {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+}
+.player-active {
+  background-color: #fff3e4;
+  /* border: 1px solid #000;     */
+}
+.score-final {
+  font-size: 4rem;
+  margin: 1.5rem 0rem;
+}
+.current-score-box {
+  width: 230px;
+  height: 110px;
+  background-image: linear-gradient(to left top, #f1328c, #e61b58);
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  color: #fff;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.205);
+}
+.current-score-box h2 {
+  font-size: 1.4rem;
+}
+.score-current {
+  font-size: 2.2rem;
+  margin-top: 0.8rem;
+  display: block;
+}
+button {
+  position: absolute;
+  padding: 8px 14px;
+  background-image: linear-gradient(to right, #be3e3e, #d33d5e);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.dice-img {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* .dice-hidden {
+ display: none;
+} */
+.dice-img img {
+  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.144);
+  height: 100%;
+  width: 100%;
+}
+.winner-box {
+  background-color: #2664219c;
+  color: #fff;
+  border: 2px solid #2afd00;
+}
+#new-game,
+#hold-up,
+#roll-dice {
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 5;
+}
+#new-game {
+  top: 10%;
+}
+#hold-up {
+  /* top: auto; */
+  bottom: 15%;
+}
+#roll-dice {
+  /* top: auto; */
+  bottom: 24%;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game | surajaswal.dev</title>
+    <link rel="stylesheet" href="pig.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="main-game-wrapper">
+      <section class="game-box-wrapper">
+        <!-- Player 1 -->
+        <section class="players player-active" id="player-0">
+          <h1>PLAYER 1</h1>
+          <span class="score-final" id="score-final-0">0</span>
+          <div class="current-score-box">
+            <h2>current</h2>
+            <span class="score-current" id="score-current-0">0</span>
+          </div>
+        </section>
+        <!-- Player 2 -->
+        <section class="players" id="player-1">
+          <h1>PLAYER 2</h1>
+          <span class="score-final" id="score-final-1">0</span>
+          <div class="current-score-box">
+            <h2>current</h2>
+            <span class="score-current" id="score-current-1">0</span>
+          </div>
+        </section>
+
+        <!-- game controllers position absolute-->
+        <button id="new-game"><i class="fas fa-sync-alt"></i> New Game</button>
+        <div class="dice-img">
+          <img src="dice-1.png" alt="Dice" id="dice-img" />
+        </div>
+        <button id="hold-up"><i class="fas fa-stamp"></i> Hold Up</button>
+        <button id="roll-dice"><i class="fas fa-dice"></i> Roll Dice</button>
+      </section>
+    </main>
+  </body>
+</html>
